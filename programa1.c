@@ -16,6 +16,12 @@ int main()
     printf("\nAgora escolha um operadorador matemático\n[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Raiz quadrada de um número \n[6] Elevar um número ao quadrado\nEscolha qual operação você deseja realizar: ");
     scanf("%f", &operacao);
 
+    if (operacao > 6 || operacao < 1)
+    {
+        printf("Operação Inválida!");
+        return 0;
+    }
+
     if (operacao != 5 && operacao != 6)
     {
         printf("\nDigite o número: ");
@@ -65,6 +71,12 @@ int main()
 
         printf("\nAgora escolha um novamento um operadorador matemático\n[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Raiz quadrada de um número \n[6] Elevar um número ao quadrado \n[8] FECHAR CALCULADORA \nEscolha qual operação você deseja realizar: ");
         scanf("%f", &operacao);
+
+        if (operacao > 6 || operacao < 1)
+        {
+            printf("Operação Inválida!");
+            return 0;
+        }
 
         if (operacao != 5 && operacao != 6)
         {
