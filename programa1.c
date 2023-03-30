@@ -4,7 +4,7 @@
 int main()
 {
 
-    float numeros[3];
+    float numeros[3]; // Float referente ao uso de vetores, nesse caso com 3 números dentro do vetor.
 
     float operacao, resultado, continuacao;
 
@@ -63,7 +63,7 @@ int main()
     while (continuacao == 1)
     {
 
-        printf("\nAgora escolha um novamento um operadorador matemático\n[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Raiz quadrada de um número \n[6] Elevar um número ao quadrado \n[7] Converter pra Binário \n[8] FECHAR CALCULADORA \nEscolha qual operação você deseja realizar: ");
+        printf("\nAgora escolha um novamento um operadorador matemático\n[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Raiz quadrada de um número \n[6] Elevar um número ao quadrado \n[8] FECHAR CALCULADORA \nEscolha qual operação você deseja realizar: ");
         scanf("%f", &operacao);
 
         if (operacao != 5 && operacao != 6)
