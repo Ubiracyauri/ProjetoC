@@ -81,7 +81,7 @@ int main() // Aqui é a função principal do código, onde tudo é feito nela, 
         if (operacao != 5 && operacao != 6) // Aqui novamente a demonstração que o código deve não reconhecer operadores matemáticos especiais para poder realizar as operações simples, utilizando só mais a frente os operadores especiais.
         {
             printf("\nDigite o número: ");
-            scanf("%f", &numeros[1]);
+            scanf("%f", &numeros[2]);
         }
 
         if (operacao == 1) // Abaixo irá ocorrer as repetições de laço para operadores matemáticas, enquanto o usuário decidir fazer operações.
