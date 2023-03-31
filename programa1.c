@@ -69,7 +69,7 @@ int main() // Aqui é a função principal do código, onde tudo é feito nela, 
     while (continuacao == 1) // Aqui temos uma estrutura de repetição onde o usuário pode decidir quantos vezes ele quer utilizar uma operação matemática, assim criando um laço de repetição caso opite por continuar calculando.
     {
 
-        printf("\nAgora escolha um novamento um operadorador matemático\n[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Raiz quadrada de um número \n[6] Elevar um número ao quadrado \n[7] FECHAR CALCULADORA \nEscolha qual operação você deseja realizar: ");
+        printf("\nAgora escolha um novamento um operadorador matemático\n[1] Adição \n[2] Subtração \n[3] Multiplicação \n[4] Divisão \n[5] Raiz quadrada de um número \n[6] Elevar um número ao quadrado \nEscolha qual operação você deseja realizar: ");
         scanf("%f", &operacao);
 
         if (operacao > 6 || operacao < 1) // Assim como anteriomente, caso o usuário venha a digitar um número que não se encaixe ao requisitos desejados, ele retorne o código.
@@ -112,11 +112,6 @@ int main() // Aqui é a função principal do código, onde tudo é feito nela, 
         if (operacao == 6)
         {
             resultado = powf(resultado, 2);
-        }
-
-        if (operacao == 7)
-        {
-            continuacao = 2;
         }
 
         printf("\n================================================================\nSeu resultado foi: " // Novamente os "printf" abaixo são para enquadrar e deixar a resposta mais apresentável.
